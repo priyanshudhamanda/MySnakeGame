@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    height: 100vh;
+}
+
+#board{
+    display: grid;
+   background-image:url("grass.jpg");
+   width: 100vmin;
+   height: 100vmin;
+   grid-template-columns: repeat(21,1fr);
+   grid-template-rows: repeat(21,1fr);
+  
+}
+.snake{
+    background-color: green;
+    border-radius: 32%;
+}
+.food{
+   background-color: crimson;
+   border-radius: 50%;
+}
+#highscore{
+    width: fit-content;
+    font-family: cursive;
+    font-size: 30px;
+}
+#score{
+    width: fit-content;
+    font-family: cursive;
+    font-size: 30px;
+}
+#scores{
+    position: absolute;
+    top: 20px;
+    right: 260px;
+
+}
+.restartdiv{
+display: grid;
+justify-self: center;
+   position: absolute;
+   bottom: 50px;
+}
+.restart{
+    font-family: cursive;
+  font-size: 80px;
+  font-weight: bold;
+  color: darkgreen;
+  text-decoration: none;
+}
+
+.restart:hover{
+    text-shadow: rgb(92, 133, 10) 6px 6px 1px;
+    cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+
+    #scores{
+        width: 70px;
+        right: 10px;
+    }
+    #score{
+        font-size: 10px;
+    }
+    #highscore{
+        font-size: 10px;
+    }
+#board{
+    width: 100vmin;
+    height: 100vmin;
+
+}
+.restart{
+    font-size: 10px;
+}
+.restartdiv{
+    bottom: 100px;
+}
+}
