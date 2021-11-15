@@ -83,6 +83,52 @@ justify-self: center;
     font-size: 10px;
 }
 .restartdiv{
-    bottom: 100px;
+    bottom: 200px;
+}
+#control{
+    position: absolute;
+    bottom: 60px;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 10px;
+
+}
+.upbtn{
+    grid-row: 1;
+    grid-column: 2;
+    background-color: darkgreen;
+    border: none;
+    width: 50px;
+    color:white;
+    height: 30px;
+    border-radius: 10% 10%;
+}
+.downbtn{
+    grid-row: 3;
+    grid-column: 2;
+    background-color: darkgreen;
+    border: none;
+    color:white;
+    height: 30px;
+    border-radius: 10% 10%;
+}
+.leftbtn{
+    grid-row: 2;
+    background-color: darkgreen;
+    border: none;
+    width: 50px;
+    color:white;
+    height: 30px;
+    border-radius: 10% 10%;
+}
+.rightbtn{
+    grid-row: 2;
+    grid-column: 3;
+    background-color: darkgreen;
+    border: none;
+    width: 50px;
+    color:white;
+    height: 30px;
+    border-radius: 10% 10%;
 }
 }

@@ -12,7 +12,7 @@ let high_score=0;
 const board=document.getElementById('board');
 const high_board=document.getElementById('highscore');
 const scoreboard=document.getElementById('score');
-
+const control=document.getElementById('control');
 
 //music
 const snakeEat=new Audio('snakeeat1.mp3');
@@ -153,6 +153,65 @@ update();
 draw();
 }
 
+//controls functions
+
+function upfun()
+{lastinputdir=inputdir;
+    if(lastinputdir.y!==0)
+    return;
+inputdir={x:0,y:-1};
+ return;
+}
+function downfun()
+{
+    lastinputdir=inputdir;
+    if(lastinputdir.y!==0)
+    return;
+inputdir={x:0,y:1};
+ return;
+}
+function leftfun()
+{
+    lastinputdir=inputdir;
+    if(lastinputdir.x!==0)
+    return;
+inputdir={x:-1,y:0};
+ return;
+}
+function rightfun()
+{
+    lastinputdir=inputdir;
+    if(lastinputdir.x!==0)
+    return;
+inputdir={x:1,y:0};
+ return;
+}
+//controls
+
+//up
+const upbtn=document.createElement('button');
+upbtn.classList.add('upbtn');
+upbtn.innerHTML="up";
+upbtn.addEventListener('click',upfun);
+control.appendChild(upbtn);
+//down
+const downbtn=document.createElement('button');
+downbtn.classList.add('downbtn');
+downbtn.innerHTML="down";
+downbtn.addEventListener('click',downfun);
+control.appendChild(downbtn);
+//left
+const leftbtn=document.createElement('button');
+leftbtn.classList.add('leftbtn');
+leftbtn.innerHTML="left";
+leftbtn.addEventListener('click',leftfun);
+control.appendChild(leftbtn);
+//right
+const rightbtn=document.createElement('button');
+rightbtn.classList.add('rightbtn');
+rightbtn.innerHTML="right";
+rightbtn.addEventListener('click',rightfun);
+control.appendChild(rightbtn);
 
 //main
 
