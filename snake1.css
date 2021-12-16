@@ -41,7 +41,7 @@ body{
 #scores{
     position: absolute;
     top: 20px;
-    right: 260px;
+    right: 170px;
 
 }
 .restartdiv{
@@ -61,6 +61,11 @@ justify-self: center;
 .restart:hover{
     text-shadow: rgb(92, 133, 10) 6px 6px 1px;
     cursor: pointer;
+}
+.upbtn,.downbtn,.leftbtn,.rightbtn{
+    color: white;
+    border: none;
+    background-color: white;
 }
 @media screen and (max-width: 480px) {
 

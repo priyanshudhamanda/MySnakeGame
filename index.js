@@ -30,7 +30,7 @@ function collide(snake) {
     //if snake touch its own body
 for(let i=1;i<snakeArr.length;i++)
 {
-    if(snake[i].x===snake[0].x && snake[i].y==snake[0].y)
+    if(snake[i].x===snake[0].x && snake[i].y===snake[0].y)
     {
         gameover.play();
        // window.location.reload();
